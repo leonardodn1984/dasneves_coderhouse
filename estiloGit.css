@@ -1,0 +1,246 @@
+/* estilos generales */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+@font-face {
+    font-family: "Nunito-Light";
+    src: url("Nunito/Nunito-Light.ttf");
+}
+body {
+    font-family: "Nunito-Light";
+    height: 100vh;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+.textBanner {
+    font-size: 80%;
+}
+h3{
+    color: rgb(221, 185, 118);
+    margin: 5px;
+    font-size: 15px;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+div {
+    margin: 50px 5px;
+}
+ul li{
+    display: inline-block;
+    padding: 14px;
+    color: white;
+    list-style-type: none;
+    text-align: center;
+}
+.seccionActual {
+    color: rgb(221, 185, 118);
+}
+a:hover {
+    color: rgb(221, 185, 118);
+}
+.sinSubrayado {
+    color: white;
+}
+.logo {
+    display: block;
+    margin: auto;
+}
+.qSomosImg {
+    width: 95%;
+}
+.border {
+    border-radius: 15px;
+}
+article {
+    margin: 5px;
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 10px;
+}
+
+/* nombre areas */
+header {
+    grid-area: header;
+    background-color: black;
+    align-items: center;
+    margin-bottom: 5px;
+}
+aside {
+    grid-area: aside;
+    background-color: #000;
+    margin: 5px;
+    height: auto;
+    width: 20%;
+    color: rgb(221, 185, 118);
+    justify-items: center;
+    position: fixed;
+    top: 25%;
+    animation: aside 1.5s infinite;
+}
+#qSomos {
+    grid-area: qSomos;
+    border-radius: 15px;
+    margin: 5px;
+}
+#productos {
+    grid-area: productos;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-display: row;
+    width: 100%;
+}
+#extra {
+    grid-area: extra;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.extraArt {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Menu FLEX */
+.flexMenu {
+    display: flex;
+    flex-direction: row;
+}
+footer {
+    display: flex;
+    grid-area: footer;
+    background-color: black;
+    margin-top: 10px;
+    justify-content: center;
+}
+.historiaFlex {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-self: center;
+    width: 100%;
+}
+.centrado {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.mTop {
+    margin-top: 35px;
+}
+
+/******** ANIMACIONES *******/
+@keyframes aside {
+    0% {
+        transform: translate(0);
+    }
+    50% {
+        transform: translateY(15px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+/******** RESPONSIVE ********/
+
+/******** DESKTOP ********/
+/* sintaxis 
+@media (condicion:valor px) { estilos css}
+*/
+@media (min-width: 1024px){
+    .oculto {
+        display: none;
+    }
+    /* GRID */
+#gridArea {
+    display: grid;
+    /* estructura */
+    grid-template-areas:
+     /* 2 columnas y 5 filas */
+    "header header"
+    "aside qSomos"
+    "aside productos"
+    "none extra"
+    "footer footer"
+    ;
+    /* Dimensiones */
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
+}
+}
+
+
+/******** TABLET ********/
+@media (min-width: 481px) and (max-width: 1023px){
+    body {
+        background-color: black;
+    }
+    .ninja {
+        display: none;
+    }
+    h2 {
+        color: white;
+    }
+    p {
+        color: white;
+    }
+    #gridArea {
+        display: grid;
+        /* estructura */
+        grid-template-areas:
+         /* 1 columnas y 6 filas */
+        "header"
+        "banner"
+        "qSomos"
+        "productos"
+        "extra"
+        "footer"
+        ;
+        /* Dimensiones */
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 2fr 2fr 2fr 1fr;
+    }
+    .bannerTablet {
+        grid-area: banner;
+        color: rgb(221, 185, 118);
+        border-radius: 15px;
+        margin: 5px;
+    }
+}
+
+/******** SMARTPHONE ********/
+@media (max-width: 480px) {
+    body {
+        background-color: rgb(224, 221, 221);
+    }
+    .ninja {
+        display: none;
+    }
+    #gridArea {
+        display: grid;
+        /* estructura */
+        grid-template-areas:
+         /* 1 columnas y 6 filas */
+        "header"
+        "banner"
+        "qSomos"
+        "productos"
+        "extra"
+        "footer"
+        ;
+        /* Dimensiones */
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 2fr 2fr 2fr 1fr;
+    }
+}
+
