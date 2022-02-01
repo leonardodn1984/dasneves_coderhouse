@@ -105,7 +105,6 @@ aside {
     width: 100%;
 }
 .extraArt {
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -150,6 +149,7 @@ footer {
         transform: translate(0);
     }
 }
+
 
 /******** RESPONSIVE ********/
 
