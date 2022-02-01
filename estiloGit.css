@@ -191,6 +191,9 @@ footer {
     h2 {
         color: white;
     }
+    .texto {
+        animation: aside 1.5s infinite;
+    }
     p {
         color: white;
     }
@@ -241,6 +244,10 @@ footer {
         /* Dimensiones */
         grid-template-columns: 100%;
         grid-template-rows: 1fr 1fr 2fr 2fr 2fr 1fr;
+        }
+        .texto {
+            animation: aside 1.5s infinite;
+        }
     }
 }
 
