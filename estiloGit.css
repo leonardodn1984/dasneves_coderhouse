@@ -150,6 +150,14 @@ footer {
         transform: translate(0);
     }
 }
+.transicion {
+    transition: all, 1s;
+}
+.transicion:hover {
+    width: 500px;
+    height: 200px;
+}
+
 
 /******** RESPONSIVE ********/
 
