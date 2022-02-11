@@ -111,6 +111,10 @@ aside {
     justify-content: center;
     width: 100%;
 }
+::selection {
+    color: white;
+    background-color: rgb(221, 185, 118);
+}
 
 /* Menu FLEX */
 .flexMenu {
