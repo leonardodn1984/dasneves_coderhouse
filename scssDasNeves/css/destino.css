@@ -1,5 +1,256 @@
-u {
-  background-color: red;
+header {
+  grid-area: header;
+  background-color: black;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+aside {
+  grid-area: aside;
+  background-color: #000;
+  margin: 5px;
+  height: auto;
+  width: 20%;
+  color: #ddb976;
+  justify-items: center;
+  position: fixed;
+  top: 15%;
+  animation: aside 1.5s infinite;
+}
+
+#qSomos {
+  grid-area: qSomos;
+  border-radius: 15px;
+  margin: 5px;
+}
+
+#productos {
+  grid-area: productos;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-display: row;
+  width: 100%;
+}
+
+#extra {
+  grid-area: extra;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Nunito-Light";
+  height: 100vh;
+}
+
+div {
+  margin: 50px 5px;
+}
+
+.textBanner {
+  font-size: 80%;
+}
+
+.seccionActual {
+  color: #ddb976;
+}
+
+a:hover {
+  color: #ddb976;
+}
+
+.sinSubrayado {
+  color: white;
+}
+
+.qSomosImg {
+  width: 95%;
+}
+
+.border {
+  border-radius: 15px;
+}
+
+article {
+  margin: 5px;
+  text-align: center;
+  font-size: 0.75rem;
+  padding: 10px;
+}
+
+::selection {
+  color: white;
+  background-color: #ddb976;
+}
+
+@font-face {
+  font-family: "Nunito-Light.ttf";
+  src: url("Nunito-Light.ttf");
+}
+h2 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+h3 {
+  color: #ddb976;
+  margin: 5px;
+  font-size: 15px;
+}
+
+.centrado {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.textoHistoria {
+  padding: 30px;
+}
+
+@keyframes aside {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+/******** DESKTOP ********/
+/* sintaxis 
+@media (condicion:valor px) { estilos css}
+*/
+@media (min-width: 1024px) {
+  .oculto {
+    display: none;
+  }
+
+  /* GRID */
+  #gridArea {
+    display: grid;
+    /* estructura */
+    grid-template-areas: "header header" "aside qSomos" "aside productos" "none extra" "footer footer";
+    /* Dimensiones */
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
+  }
+}
+/******** TABLET ********/
+@media (min-width: 481px) and (max-width: 1023px) {
+  body {
+    background-color: black;
+  }
+
+  .ninja {
+    display: none;
+  }
+
+  h2 {
+    color: white;
+  }
+
+  .texto {
+    animation: aside 1.5s infinite;
+  }
+
+  p {
+    color: white;
+  }
+
+  #gridArea {
+    display: grid;
+    /* estructura */
+    grid-template-areas: "header" "banner" "qSomos" "productos" "extra" "footer";
+    /* Dimensiones */
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 2fr 2fr 2fr 1fr;
+  }
+
+  .bannerTablet {
+    grid-area: banner;
+    color: #ddb976;
+    border-radius: 15px;
+    margin: 5px;
+  }
+}
+/******** SMARTPHONE ********/
+@media (max-width: 480px) {
+  body {
+    background-color: #e0dddd;
+  }
+
+  .ninja {
+    display: none;
+  }
+
+  #gridArea {
+    display: grid;
+    /* estructura */
+    grid-template-areas: "header" "banner" "qSomos" "productos" "extra" "footer";
+    /* Dimensiones */
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 2fr 2fr 2fr 1fr;
+  }
+
+  .texto {
+    animation: aside 1.5s infinite;
+  }
+}
+.flexMenu {
+  display: flex;
+  flex-direction: row;
+}
+
+footer {
+  display: flex;
+  grid-area: footer;
+  background-color: black;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.historiaFlex {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-self: center;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+ul li {
+  display: inline-block;
+  padding: 14px;
+  color: white;
+  list-style-type: none;
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  margin: auto;
+}
+
+.extraArt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }
 
 /*# sourceMappingURL=destino.css.map */

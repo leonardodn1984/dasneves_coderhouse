@@ -1,0 +1,38 @@
+.flexMenu {
+    display: flex;
+    flex-direction: row;
+}
+footer {
+    display: flex;
+    grid-area: footer;
+    background-color: black;
+    margin-top: 10px;
+    justify-content: center;
+}
+.historiaFlex {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-self: center;
+    width: 100%;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+ul li{
+    display: inline-block;
+    padding: 14px;
+    color: white;
+    list-style-type: none;
+    text-align: center;
+}
+.logo {
+    display: block;
+    margin: auto;
+}
+.extraArt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}

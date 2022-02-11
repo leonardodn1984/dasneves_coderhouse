@@ -1,0 +1,28 @@
+.textBanner {
+    font-size: 80%;
+}
+.seccionActual {
+    color: rgb(221, 185, 118);
+}
+a:hover {
+    color: rgb(221, 185, 118);
+}
+.sinSubrayado {
+    color: white;
+}
+.qSomosImg {
+    width: 95%;
+}
+.border {
+    border-radius: 15px;
+}
+article {
+    margin: 5px;
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 10px;
+}
+::selection {
+    color: white;
+    background-color: rgb(221, 185, 118);
+}

@@ -1,0 +1,38 @@
+header {
+    grid-area: header;
+    background-color: black;
+    align-items: center;
+    margin-bottom: 5px;
+}
+aside {
+    grid-area: aside;
+    background-color: #000;
+    margin: 5px;
+    height: auto;
+    width: 20%;
+    color: rgb(221, 185, 118);
+    justify-items: center;
+    position: fixed;
+    top: 15%;
+    animation: aside 1.5s infinite;
+}
+#qSomos {
+    grid-area: qSomos;
+    border-radius: 15px;
+    margin: 5px;
+}
+#productos {
+    grid-area: productos;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-display: row;
+    width: 100%;
+}
+#extra {
+    grid-area: extra;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}

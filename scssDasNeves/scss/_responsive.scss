@@ -1,0 +1,96 @@
+/******** DESKTOP ********/
+/* sintaxis 
+@media (condicion:valor px) { estilos css}
+*/
+@media (min-width: 1024px){
+    .oculto {
+        display: none;
+    }
+    /* GRID */
+#gridArea {
+    display: grid;
+    /* estructura */
+    grid-template-areas:
+     /* 2 columnas y 5 filas */
+    "header header"
+    "aside qSomos"
+    "aside productos"
+    "none extra"
+    "footer footer"
+    ;
+    /* Dimensiones */
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
+}
+}
+
+
+/******** TABLET ********/
+@media (min-width: 481px) and (max-width: 1023px){
+    body {
+        background-color: black;
+    }
+    .ninja {
+        display: none;
+    }
+    h2 {
+        color: white;
+    }
+    .texto {
+        animation: aside 1.5s infinite;
+    }
+    p {
+        color: white;
+    }
+    #gridArea {
+        display: grid;
+        /* estructura */
+        grid-template-areas:
+         /* 1 columnas y 6 filas */
+        "header"
+        "banner"
+        "qSomos"
+        "productos"
+        "extra"
+        "footer"
+        ;
+        /* Dimensiones */
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 2fr 2fr 2fr 1fr;
+    }
+    .bannerTablet {
+        grid-area: banner;
+        color: rgb(221, 185, 118);
+        border-radius: 15px;
+        margin: 5px;
+    }
+}
+
+/******** SMARTPHONE ********/
+@media (max-width: 480px) {
+    body {
+        background-color: rgb(224, 221, 221);
+    }
+    .ninja {
+        display: none;
+    }
+    #gridArea {
+        display: grid;
+        /* estructura */
+        grid-template-areas:
+         /* 1 columnas y 6 filas */
+        "header"
+        "banner"
+        "qSomos"
+        "productos"
+        "extra"
+        "footer"
+        ;
+        /* Dimensiones */
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 2fr 2fr 2fr 1fr;
+        }
+        .texto {
+            animation: aside 1.5s infinite;
+        }
+    }
