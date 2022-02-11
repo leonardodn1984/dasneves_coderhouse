@@ -81,7 +81,7 @@ aside {
     color: rgb(221, 185, 118);
     justify-items: center;
     position: fixed;
-    top: 25%;
+    top: 15%;
     animation: aside 1.5s infinite;
 }
 #qSomos {
@@ -153,12 +153,6 @@ footer {
 .transicion {
     transition: all, 1s;
 }
-.transicion:hover {
-    width: 500px;
-    height: 200px;
-}
-
-
 /******** RESPONSIVE ********/
 
 /******** DESKTOP ********/
