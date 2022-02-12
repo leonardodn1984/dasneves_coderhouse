@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "Nunito-Light.ttf";
+    font-family: "Nunito-Light";
     src: url("Nunito-Light.ttf")
 }
 h2 {
@@ -10,11 +10,4 @@ h3 {
     color: rgb(221, 185, 118);
     margin: 5px;
     font-size: 15px;
-}
-.centrado {
-    text-align: center;
-    margin-bottom: 10px;
-}
-.textoHistoria {
-    padding: 30px;
 }

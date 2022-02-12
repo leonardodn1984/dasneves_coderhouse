@@ -4,9 +4,6 @@
 .seccionActual {
     color: rgb(221, 185, 118);
 }
-a:hover {
-    color: rgb(221, 185, 118);
-}
 .sinSubrayado {
     color: white;
 }
@@ -21,6 +18,16 @@ article {
     text-align: center;
     font-size: 0.75rem;
     padding: 10px;
+}
+.centrado {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.textoHistoria {
+    padding: 30px;
+}
+a:hover {
+    color: rgb(221, 185, 118);
 }
 ::selection {
     color: white;

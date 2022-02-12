@@ -11185,10 +11185,6 @@ div {
   color: #ddb976;
 }
 
-a:hover {
-  color: #ddb976;
-}
-
 .sinSubrayado {
   color: white;
 }
@@ -11208,13 +11204,26 @@ article {
   padding: 10px;
 }
 
+.centrado {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.textoHistoria {
+  padding: 30px;
+}
+
+a:hover {
+  color: #ddb976;
+}
+
 ::selection {
   color: white;
   background-color: #ddb976;
 }
 
 @font-face {
-  font-family: "Nunito-Light.ttf";
+  font-family: "Nunito-Light";
   src: url("Nunito-Light.ttf");
 }
 h2, .h2 {
@@ -11226,15 +11235,6 @@ h3, .h3 {
   color: #ddb976;
   margin: 5px;
   font-size: 15px;
-}
-
-.centrado {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.textoHistoria {
-  padding: 30px;
 }
 
 @keyframes aside {
